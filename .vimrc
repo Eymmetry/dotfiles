@@ -95,6 +95,9 @@ nnoremap <Leader>jn :JuliaCellNextCell<CR>
 " map <Leader>je to execute the current line or current selection
 nmap <Leader>je <Plug>SlimeLineSend
 xmap <Leader>je <Plug>SlimeRegionSend
+
+Plug 'tpope/vim-fugitive'
+
 call plug#end()
 
 colorscheme neodark
