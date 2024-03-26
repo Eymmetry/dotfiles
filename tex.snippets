@@ -363,31 +363,33 @@ snippet () "left( right)" iA
 \left( ${1:${VISUAL}} \right) $0
 endsnippet
 
-snippet lr "left( right)" i
+priority 1
+snippet lr "left( right)" iA
+($1) $0
+endsnippet
+
+priority 10
+snippet (lr "left( right)" iA
 \left( ${1:${VISUAL}} \right) $0
 endsnippet
 
-snippet lr( "left( right)" i
-\left( ${1:${VISUAL}} \right) $0
-endsnippet
-
-snippet lr| "left| right|" i
+snippet |lr "left| right|" iA
 \left. ${1:${VISUAL}} \right| $0
 endsnippet
 
-snippet lr{ "left\{ right\}" i
+snippet {lr "left\{ right\}" iA
 \left\\{ ${1:${VISUAL}} \right\\} $0
 endsnippet
 
-snippet lrb "left\{ right\}" i
+snippet blr "left\{ right\}" iA
 \left\\{ ${1:${VISUAL}} \right\\} $0
 endsnippet
 
-snippet lr[ "left[ right]" i
+snippet [lr "left[ right]" iA
 \left[ ${1:${VISUAL}} \right] $0
 endsnippet
 
-snippet lra "leftangle rightangle" iA
+snippet alr "leftangle rightangle" iA
 \left<${1:${VISUAL}} \right>$0
 endsnippet
 
@@ -608,6 +610,18 @@ endsnippet
 context "math()"
 snippet xx "cross" iA
 \times 
+endsnippet
+
+priority 12
+context "math()"
+snippet oxx "ocross" iA
+\otimes
+endsnippet
+
+priority 12
+context "math()"
+snippet opp "oplus" iA
+\oplus
 endsnippet
 
 priority 100
@@ -1146,13 +1160,15 @@ snippet mc "mathcal" iA
 \mathcal{$1}$0
 endsnippet
 
-snippet llr "mathrm" iA
-($1)$0
-endsnippet
 
 context "math()"
 snippet hbq "mathrm" iA
 \hbar
+endsnippet
+
+context "math()"
+snippet Odr "order" iA
+\order{$1}$0
 endsnippet
 
 context "math()"
@@ -1185,7 +1201,9 @@ snippet Sch "Schrödinger" iA
 Schr\"{o}dinger
 endsnippet
 
-snippet dg "dagger" iA
+
+context "math()"
+snippet dag "dagger" iA
 ^{\dagger}
 endsnippet
 
@@ -1193,5 +1211,23 @@ snippet step "step" iA
 \stepcounter{equation}\tag{\theequation} 
 endsnippet 
 
+snippet  tano "thooft anomaly" iA
+'t Hooft anomaly
+endsnippet
 
+context "math()"
+snippet  gee "gee" iA
+\mathfrak{g}
+endsnippet
+
+
+context "math()
+snippet ast "hodge star" iA
+\ast
+endsnippet
+
+context "math()
+snippet wedge "wedge" iA
+\wedge
+endsnippet
 # vim:ft=snippets

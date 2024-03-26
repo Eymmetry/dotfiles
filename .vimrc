@@ -98,8 +98,10 @@ xmap <Leader>je <Plug>SlimeRegionSend
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'JuliaEditorSupport/julia-vim'
+
+
 call plug#end()
 
 colorscheme neodark
 set term=xterm-256color "tmuxがちゃんとした色になるように必要だった。
-

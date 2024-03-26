@@ -11,7 +11,8 @@ set sandbox none
 set default-fg              "#bcc0d1" #わからん
 set default-bg              "#aabbc4" #仕切りの色
 set recolor true #  デフォルトでドキュメントの色を変更する
-set recolor-darkcolor       "#aabbc4" #ダークモードのときの文字色
+#set recolor-darkcolor       "#aabbc4" #ダークモードのときの文字色
+set recolor-darkcolor       "#ffffff" #ダークモードのときの文字色
 set recolor-lightcolor      "#1f2f38" #ダークモードのときの背景の色
 set highlight-color         "#84a0c6" #ハイライト(検索)のときに選ばれていないやつ
 set highlight-active-color  "#a093c7" #ハイライトのときに選ばれたやつ

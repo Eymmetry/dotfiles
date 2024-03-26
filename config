@@ -193,4 +193,5 @@ bindsym --release Mod1+a exec scrot -u
 bindsym --release Mod1+s exec scrot -s
 exec --no-startup-id fcitx
 exec --no-startup-id ~/.fehbg
+exec --no-startup-id "picom -b --config ~/.config/picom/picom.conf"
 
