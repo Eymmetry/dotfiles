@@ -1,9 +1,11 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-export LSCOLORS=gxfxcxdxbxegedabagacad
 end
 
+#export LSCOLORS=gxfxcxdxbxegedabagacad
+set -x LSCOLORS  gxfxcxdxbxegedabagacad
+
 alias zathura='zathura --fork'
-alias vim='vim --servername vim'
-alias ls='ls --color=auto'
+#alias vim='vim --servername VIM'
+alias ls='ls --color=always'
 alias ju='julia.sh'
