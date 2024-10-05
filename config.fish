@@ -9,3 +9,5 @@ alias zathura='zathura --fork'
 #alias vim='vim --servername VIM'
 alias ls='ls --color=always'
 alias ju='julia.sh'
+
+

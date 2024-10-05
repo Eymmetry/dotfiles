@@ -702,11 +702,6 @@ snippet ~e "~=" iA
 \simeq 
 endsnippet
 
-context "math()"
-snippet set "set" wA
-\\{$1\\} $0
-endsnippet
-
 snippet || "mid" iA
  \mid 
 endsnippet
@@ -747,19 +742,19 @@ snippet nnn "bigcap" iA
 endsnippet
 
 snippet OO "emptyset" iA
-\O
+O
 endsnippet
 
 snippet RR "real" iA
-\R
+\mathbb{R}
 endsnippet
 
 snippet QQ "Q" iA
-\Q
+\mathbb{Q}
 endsnippet
 
 snippet ZZ "Z" iA
-\Z
+\mathbb{Z}
 endsnippet
 
 snippet <! "normal" iA
@@ -787,7 +782,7 @@ snippet '(?<!\\)ref' "reffernce" irA
 endsnippet
 
 snippet '(?<!\\)abs' "abs" irA
-\abs{$1}$0
+\left| $1 \right|$0
 endsnippet
 
 snippet '(?<!\\)8p' "propto" irA
@@ -825,10 +820,11 @@ snippet cvec "column vector" iA
 \begin{pmatrix} ${1:x}_${2:1}\\\\ \vdots\\\\ $1_${2:n} \end{pmatrix}
 endsnippet
 
+
 priority 10
 context "math()"
-snippet "[^h]bar" "bar" riA
-\overline{$1}$0
+snippet "bar" "bar" riA
+\bar{$1}$0
 endsnippet
 
 priority 100
@@ -1092,6 +1088,14 @@ snippet bm "vectorbold" iA
 \bm{$1}$0
 endsnippet
 
+snippet bf "vectorbold" iA
+\pmb{\textbf{$1}$0}
+endsnippet
+
+snippet ull "vectorbold" iA
+\ul{$1}$0
+endsnippet
+
 priority 100
 context "math()"
 snippet "([a-zA-Z])bm" "bm" riA
@@ -1227,7 +1231,7 @@ snippet ast "hodge star" iA
 endsnippet
 
 context "math()
-snippet wedge "wedge" iA
+snippet wd "wedge" iA
 \wedge
 endsnippet
 # vim:ft=snippets
